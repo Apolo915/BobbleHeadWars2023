@@ -7,7 +7,7 @@ onBoardingDoNotAskAgain = true
 showPackageIndexes = false
 showStatusBar = false
 scopes = {
-	"last_search.DA949528" = "bobbleArena"
+	"last_search.DA949528" = "bobbleEnemy"
 	"OpenInspectorPreview.DA949528" = "0"
 	"currentGroup.DA949528" = "all"
 }
