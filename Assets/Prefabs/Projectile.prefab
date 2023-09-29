@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 916915189310377578}
   - component: {fileID: 9048958395754153321}
   - component: {fileID: 7963037795273807115}
-  m_Layer: 0
+  - component: {fileID: 1403939127363640309}
+  m_Layer: 10
   m_Name: Projectile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -114,3 +115,15 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1403939127363640309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4937046557519957956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7be97319ad7bff041b77675492584608, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
