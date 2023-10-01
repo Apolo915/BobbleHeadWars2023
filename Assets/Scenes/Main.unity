@@ -1734,11 +1734,11 @@ MonoBehaviour:
   - {fileID: 414791937}
   - {fileID: 21157163}
   alien: {fileID: 381728250656580851, guid: 0225da1ac64916a4294b97d938dfdfa9, type: 3}
-  maxAliensOnScreen: 10
-  totalAliens: 10
+  maxAliensOnScreen: 20
+  totalAliens: 40
   minSpawnTime: 0
   maxSpawnTime: 3
-  aliensPerSpawn: 1
+  aliensPerSpawn: 2
 --- !u!4 &2015191694
 Transform:
   m_ObjectHideFlags: 0
