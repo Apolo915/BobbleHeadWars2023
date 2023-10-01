@@ -1652,9 +1652,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b064076906529f42ad1e87d63fede92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  spawnPoints: []
-  alien: {fileID: 0}
+  player: {fileID: 1078793730}
+  spawnPoints:
+  - {fileID: 2005598194}
+  - {fileID: 1530983855}
+  - {fileID: 921537598}
+  - {fileID: 139965159}
+  - {fileID: 1109575274}
+  - {fileID: 888878947}
+  - {fileID: 1708882920}
+  - {fileID: 1923547930}
+  - {fileID: 460171342}
+  - {fileID: 414791937}
+  - {fileID: 21157163}
+  alien: {fileID: 381728250656580851, guid: 0225da1ac64916a4294b97d938dfdfa9, type: 3}
+  maxAliensOnScreen: 10
+  totalAliens: 10
+  minSpawnTime: 0
+  maxSpawnTime: 3
+  aliensPerSpawn: 1
 --- !u!4 &2015191694
 Transform:
   m_ObjectHideFlags: 0
