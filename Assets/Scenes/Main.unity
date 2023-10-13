@@ -967,6 +967,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 4096
+  bodyAnimator: {fileID: 1820690399}
 --- !u!143 &1078793734
 CharacterController:
   m_ObjectHideFlags: 0
@@ -1524,6 +1525,26 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &1820690399
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1667989319}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 0236273d3e6aeb741a53b5e09d674af9, type: 3}
+  m_Controller: {fileID: 9100000, guid: f422f190ee389f74b8f2b23208f88fe1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1923547930
 GameObject:
   m_ObjectHideFlags: 0
