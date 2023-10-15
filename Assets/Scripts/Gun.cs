@@ -7,6 +7,9 @@ public class Gun : MonoBehaviour
     public GameObject bulletPrefab;
     public Transform launchPosition;
     private AudioSource audioSource;
+    public bool isUpgraded;
+    public float upgradeTime = 10.0f;
+    private float currentTime;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,16 +30,43 @@ public class Gun : MonoBehaviour
         {
             CancelInvoke("fireBullet");
         }
+        currentTime += Time.deltaTime;
+        if (currentTime > upgradeTime && isUpgraded == true)
+        {
+            isUpgraded = false;
+        }
     }
     void fireBullet()
     {
-    // 1
-    GameObject bullet = Instantiate(bulletPrefab) as GameObject;
-    // 2
-    bullet.transform.position = launchPosition.position;
-    // 3
-    bullet.GetComponent<Rigidbody>().velocity =
-    transform.parent.forward * 100;
-    audioSource.PlayOneShot(SoundManager.Instance.gunFire);
+        Rigidbody bullet = createBullet();
+        bullet.velocity = transform.parent.forward * 100;
+        if (isUpgraded)
+        {
+            Rigidbody bullet2 = createBullet();
+            bullet2.velocity =
+            (transform.right + transform.forward / 0.5f) * 100;
+            Rigidbody bullet3 = createBullet();
+            bullet3.velocity =
+            ((transform.right * -1) + transform.forward / 0.5f) * 100;
+        }
+        if (isUpgraded)
+        {
+            audioSource.PlayOneShot(SoundManager.Instance.upgradedGunFire);
+        }
+        else
+        {
+            audioSource.PlayOneShot(SoundManager.Instance.gunFire);
+        }
+    }
+    private Rigidbody createBullet()
+    {
+        GameObject bullet = Instantiate(bulletPrefab) as GameObject;
+        bullet.transform.position = launchPosition.position;
+        return bullet.GetComponent<Rigidbody>();
+    }
+    public void UpgradeGun()
+    {
+        isUpgraded = true;
+        currentTime = 0;
     }
 }
