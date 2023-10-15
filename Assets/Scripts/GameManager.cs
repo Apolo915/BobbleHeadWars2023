@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         actualUpgradeTime = Random.Range(upgradeMaxTimeSpawn - 3.0f,
-     upgradeMaxTimeSpawn);
+        upgradeMaxTimeSpawn);
         actualUpgradeTime = Mathf.Abs(actualUpgradeTime);
 
     }

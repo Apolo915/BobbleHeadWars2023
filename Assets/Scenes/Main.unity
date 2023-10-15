@@ -675,7 +675,7 @@ AudioSource:
   m_GameObject: {fileID: 860576233}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 3111082711654629542, guid: 7b8b6b0f6341f1246bd7ee0bba7b7c59, type: 2}
   m_audioClip: {fileID: 8300000, guid: c913da143d1341c4a8ca22e0717e79a2, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -771,7 +771,7 @@ AudioSource:
   m_GameObject: {fileID: 860576233}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -676011142338924193, guid: 7b8b6b0f6341f1246bd7ee0bba7b7c59, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -1803,7 +1803,7 @@ AudioSource:
   m_GameObject: {fileID: 1667989319}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 8439739390662682088, guid: 7b8b6b0f6341f1246bd7ee0bba7b7c59, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -2179,11 +2179,11 @@ MonoBehaviour:
   - {fileID: 414791937}
   - {fileID: 21157163}
   alien: {fileID: 381728250656580851, guid: 0225da1ac64916a4294b97d938dfdfa9, type: 3}
-  maxAliensOnScreen: 20
+  maxAliensOnScreen: 50
   totalAliens: 50
   minSpawnTime: 0
   maxSpawnTime: 3
-  aliensPerSpawn: 2
+  aliensPerSpawn: 3
   upgradePrefab: {fileID: 105092, guid: 941d6224549424c91b1cf112b44ec0cb, type: 3}
   gun: {fileID: 1820690397}
   upgradeMaxTimeSpawn: 7.5
